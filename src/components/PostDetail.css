@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+}
+
+.post-cover {
+  height: 300px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  background: white;
+  overflow: scroll;
+}
+
+.side-menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 50px;
+}
+
+.buttons-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.back-btn-container {
+  margin-top: 20px;
+}
+
+.article {
+  margin-top: 10px;
+}
+
+.title {
+  margin-top: 20px;
+}
