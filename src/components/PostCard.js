@@ -9,53 +9,16 @@ import './PostCard.css';
 
 function PostCard({ item, onTitleClick, onLike, onDislike, onBookmark }) {
   return (
-    <Card
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        maxHeight: 250,
-        padding: 10,
-        marginTop: 10,
-        marginBottom: 10
-      }}
-    >
-      <CardMedia style={{ flex: 1 }} image={item.image || ''} />
-      <div
-        style={{
-          display: 'flex',
-          flex: 1,
-          flexDirection: 'column',
-          paddingLeft: 15
-        }}
-      >
-        <div
-          style={{
-            fontSize: 18,
-            maxHeight: '20%',
-            overflow: 'hidden'
-          }}
-        >
+    <Card className="card-container">
+      <CardMedia style={{ flex: 2 }} image={item.image || ''} />
+      <div className="content">
+        <div className="title-container">
           <button className="text-button" onClick={onTitleClick}>
             {item.title}
           </button>
         </div>
-        <div
-          style={{
-            marginTop: 10,
-            fontWeight: 'lighter',
-            height: 162,
-            overflow: 'auto'
-          }}
-        >
-          {item.description}
-        </div>
-        <div
-          style={{
-            marginTop: 'auto',
-            marginLeft: 'auto',
-            paddingTop: 10
-          }}
-        >
+        <div className="description">{item.description}</div>
+        <div className="button-group">
           <IconButton aria-label="Dislike" onClick={onDislike}>
             <ThumbDownIcon color={item.disliked ? 'primary' : 'inherit'} />
           </IconButton>
