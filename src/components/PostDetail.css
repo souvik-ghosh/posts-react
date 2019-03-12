@@ -7,6 +7,7 @@
 
 .post-cover {
   height: 400px;
+  background-size: cover;
 }
 
 .content-wrapper {
@@ -55,4 +56,11 @@
 .title {
   margin-top: 20px;
   font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-cover {
+    height: 200px;
+    background-size: cover;
+  }
 }

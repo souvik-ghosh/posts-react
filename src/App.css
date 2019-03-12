@@ -3,5 +3,6 @@
   flex: 1;
   background: #eceefe;
   flex-grow: 1;
-  height: -webkit-fill-available;
+  height: 100%;
+  width: 100%;
 }

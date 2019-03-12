@@ -10,7 +10,7 @@ import './PostCard.css';
 function PostCard({ item, onTitleClick, onLike, onDislike, onBookmark }) {
   return (
     <Card className="card-container">
-      <CardMedia style={{ flex: 2 }} image={item.image || ''} />
+      <CardMedia className="card-media" image={item.image || ''} />
       <div className="content">
         <div className="title-container">
           <button className="text-button" onClick={onTitleClick}>

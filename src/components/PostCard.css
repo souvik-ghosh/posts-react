@@ -49,3 +49,24 @@
   margin-left: auto;
   padding-top: 10;
 }
+
+.card-media {
+  flex: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .card-media{
+    height: 300px;
+    flex: 1;
+  }
+
+  .title-container {
+    height: 100px;
+  }
+}

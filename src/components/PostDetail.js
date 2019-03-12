@@ -22,7 +22,7 @@ function PostDetail({
             aria-label="Back"
             onClick={onBackBtnClick}
           >
-            <BackIcon color={item.disliked ? 'primary' : 'inherit'} />
+            <BackIcon />
           </IconButton>
         </div>
         <div className="buttons-container">
